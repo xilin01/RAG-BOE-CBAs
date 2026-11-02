@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.env
+# Downloaded PDFs and derived artifacts are reproducible from data/corpus.csv
+data/raw/
+data/processed/
+indexes/
+
+# Private working notes
+CLAUDE.md
+RESUME.md

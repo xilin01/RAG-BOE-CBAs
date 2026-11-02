@@ -1,0 +1,27 @@
+[project]
+name = "rag-boe-cbas"
+version = "0.1.0"
+description = "Hybrid RAG assistant over Spanish collective bargaining agreements (BOE) with a retrieval and generation evaluation harness."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []  # Runtime dependencies are added phase by phase.
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
