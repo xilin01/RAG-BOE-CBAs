@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Hybrid RAG assistant over Spanish collective bargaining agreements (BOE) with a retrieval and generation evaluation harness."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []  # Runtime dependencies are added phase by phase.
+dependencies = [
+    "pymupdf>=1.24",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.6"]
