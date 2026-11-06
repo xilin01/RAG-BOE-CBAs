@@ -31,7 +31,9 @@ _FIRST_PAGE_FURNITURE = [
     re.compile(r"^\d{3,6}$"),  # disposition number
 ]
 _BOE_PAGE = re.compile(r"Sec\. III\.\s+Pág\. (\d+)")
-_HYPHEN_BREAK = re.compile(r"([a-záéíóúñü])-\n([a-záéíóúñü])")
+# BOE does not hyphenate words at line ends: a trailing hyphen belongs to a compound
+# ("fijo-discontinuo", "e-learning"), so keep it and only drop the line break.
+_HYPHEN_BREAK = re.compile(r"([a-záéíóúñü])- ?\n([a-záéíóúñü])")
 
 
 @dataclass(frozen=True)
@@ -49,10 +51,10 @@ def is_furniture(line: str, first_page: bool = False) -> bool:
 
 
 def clean_block(lines: list[str], first_page: bool = False) -> str:
-    """Drop page furniture, re-join hyphenated words and collapse whitespace."""
+    """Drop page furniture, re-join compounds split at a line end, collapse whitespace."""
     kept = [line for line in lines if line.strip() and not is_furniture(line, first_page)]
     text = "\n".join(kept)
-    text = _HYPHEN_BREAK.sub(r"\1\2", text)
+    text = _HYPHEN_BREAK.sub(r"\1-\2", text)
     text = text.replace(" ", " ").replace(" ", " ")
     return re.sub(r"\s+", " ", text).strip()
 

@@ -55,23 +55,23 @@ Los sistemas de organización del trabajo y sus modificaciones se complementará
 Los importes de los conceptos salariales que figuran en las tablas anexas de este Convenio son, en todo caso, cantidades brutas.
 ```
 
-## `BOE-A-2023-19903:anexo-XII:13`
+## `BOE-A-2023-19903:anexo-XII:15`
 
-**ANEXO XII. Formación en materia de prevención de riesgos laborales** (part 14/26, BOE p. 129212-129213)
+**ANEXO XII. Formación en materia de prevención de riesgos laborales** (part 16/26, BOE p. 129214-129215)
 
 ```text
-− Procedimientos de trabajo.
-2. Técnicas preventivas específicas.
-− Identificación de riesgos. − Evaluación de riesgos del puesto (genérica). − Medios auxiliares, equipos de trabajo y herramientas:
-a) Útiles de la máquina o del equipo de trabajo. b) Riesgos y medidas preventivas.
-− Mantenimiento y verificaciones, manual del fabricante, características de los principales elementos, dispositivos de seguridad, documentación, sistemas de elevación, etc.
-− Aspectos ergonómicos. − Medios de protección colectiva (colocación, usos, obligaciones y mantenimiento). − Equipos de protección individual (colocación, usos, obligaciones y mantenimiento). − Conexiones eléctricas y mecánicas. − Ventilación del lugar de trabajo. Exposición al ruido. − Señalización.
-14) Contenido formativo específico para trabajos de aislamiento e impermeabilización.
+17) Contenido formativo específico para trabajos de estabilización de explanadas y extendido de firmes.
 1. Definición de los trabajos.
-− Conceptos y principios básicos. − Materiales aislantes. Características y formas de presentación. − Productos de impermeabilización. Tipos y características. − Técnicas y procedimientos de instalación o aplicación del material aislante (cerramientos verticales, cubiertas, divisiones interiores, techos, suelos, conducciones, etc.).
-− Técnicas de impermeabilización (cubiertas, cerramientos verticales, elementos enterrados, depósitos, etc.).
+− Explanadas. Tipos de terrenos: características y comportamiento. − Subbases, firmes y pavimentos. Tipos. − Proceso de ejecución: comprobación y preparación de la superficie de asiento, aportación del material, extendido y nivelación, riego, compactación y fratasado, en su caso.
+− Maquinaria empleada (descripción y características): extendedoras, compactadoras, fratasadoras, etc.
 2. Técnicas preventivas específicas.
-− Identificación de riesgos. − Evaluación de riesgos del puesto. − Medios auxiliares, equipos de trabajo y herramientas: riesgos y medidas preven [...]
+− Identificación de riesgos. − Evaluación de riesgos del puesto. − Medios auxiliares, equipos de trabajo y herramientas: riesgos y medidas preventivas. − Mantenimiento y verificaciones, manual del fabricante, dispositivos de seguridad, etc. − Manipulación manual de cargas. − Medios de protección colectiva (colocación, usos, obligaciones y mantenimiento). − Equipos de protección individual (colocación, usos, obligaciones y mantenimiento). − Materiales y productos (etiquetado, fichas de datos de seguridad, frases H y P,...). − Afección a la circulación de las vías públicas. Señalización de obras.
+18) Contenido formativo específico para colocación de materiales de cubrición.
+1. Definición de los trabajos.
+− Tipos de cubiertas.
+− Materiales de cubrición: tejas, piezas de pizarra, chapas o paneles de acero o de aleaciones ligeras, placas de material sintético, etc.
+− Sistemas de colocación y sujeción.
+2. Técnicas preventivas específica [...]
 ```
 
 ## `BOE-A-2023-19903:art-171:0`

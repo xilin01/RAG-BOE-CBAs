@@ -27,10 +27,17 @@ def test_page_furniture_is_removed():
     assert is_furniture("13741", first_page=True)
 
 
-def test_hyphenated_line_break_is_rejoined():
-    assert clean_block(["las personas trabaja-", "doras del sector"]) == (
-        "las personas trabajadoras del sector"
+def test_compound_split_at_line_end_keeps_its_hyphen():
+    assert clean_block(["el contrato fijo-", "discontinuo y el e- ", "learning"]) == (
+        "el contrato fijo-discontinuo y el e-learning"
     )
+
+
+def test_heading_only_units_produce_no_chunks():
+    units = segment(paras("Artículo 1. Objeto.", "x", "ANEXO V"))
+    chunks = chunk_units("BOE-A-2023-1", units)
+    assert [c.unit_id for c in chunks] == ["art-1"]
+    assert all(c.text and c.page_start > 0 for c in chunks)
 
 
 def test_articles_preamble_and_inline_references():

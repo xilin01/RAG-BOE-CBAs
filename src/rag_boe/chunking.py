@@ -228,6 +228,8 @@ def chunk_units(boe_id: str, units: list[Unit], max_chars: int = 2000) -> list[C
     """
     chunks: list[Chunk] = []
     for unit in units:
+        if not unit.paragraphs:
+            continue  # heading-only unit (e.g. a form printed as an image): nothing to cite
         groups: list[list[Paragraph]] = [[]]
         size = 0
         for para in unit.paragraphs:
@@ -245,10 +247,10 @@ def chunk_units(boe_id: str, units: list[Unit], max_chars: int = 2000) -> list[C
                     size = 0
                 groups[-1].append(p)
                 size += len(p.text) + 1
-        groups = [g for g in groups if g] or [[]]
+        groups = [g for g in groups if g]
         for i, group in enumerate(groups):
-            pages = [p.boe_page for p in group] or [0]
-            pdf_pages = [p.pdf_page for p in group] or [0]
+            pages = [p.boe_page for p in group]
+            pdf_pages = [p.pdf_page for p in group]
             chunks.append(
                 Chunk(
                     chunk_id=f"{boe_id}:{unit.unit_id}:{i}",

@@ -44,7 +44,7 @@ def stratified_sample(chunks: list[Chunk], seed: int = 0) -> list[Chunk]:
     take([c for c in chunks if c.unit_type == "annex"])
     take([c for c in chunks if c.unit_type == "disposition"])
     take([c for c in chunks if c.page_start != c.page_end])
-    take(chunks, 20 - len(picked))
+    take(chunks, max(0, 20 - len(picked)))
     return sorted(picked.values(), key=lambda c: c.chunk_id)
 
 
@@ -84,7 +84,8 @@ def main() -> None:
             print(f"    articles[{scope}]: {r}")
 
     ids = [c.chunk_id for c in all_chunks]
-    assert len(ids) == len(set(ids)), "duplicate chunk ids"
+    if len(ids) != len(set(ids)):  # not an assert: it must also hold under python -O
+        raise ValueError("duplicate chunk ids")
     write_jsonl(args.out, [asdict(c) for c in all_chunks])
     print(f"wrote {len(all_chunks)} chunks -> {args.out}")
     if args.review:
