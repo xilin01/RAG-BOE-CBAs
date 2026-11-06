@@ -1,8 +1,8 @@
-boe_id,sector,name,published,pdf_url
-BOE-A-2023-6344,hospitality,VI Acuerdo Laboral para el sector de la Hostelería (ALEH VI),2023-03-10,https://www.boe.es/boe/dias/2023/03/10/pdfs/BOE-A-2023-6344.pdf
-BOE-A-2025-7766,consulting-it,XIX Convenio colectivo estatal de empresas de consultoría; tecnologías de la información y estudios de mercado y de la opinión pública,2025-04,https://www.boe.es/eli/es/res/2025/04/04/(10)/dof/spa/pdf
-BOE-A-2025-19507,tax-advisory,VIII Convenio colectivo para despachos de técnicos tributarios y asesores fiscales,2025-10-01,https://www.boe.es/boe/dias/2025/10/01/pdfs/BOE-A-2025-19507.pdf
-BOE-A-2023-6346,engineering,XX Convenio colectivo nacional de empresas de ingeniería; oficinas de estudios técnicos; inspección; supervisión y control técnico y de calidad,2023-03-10,https://www.boe.es/boe/dias/2023/03/10/pdfs/BOE-A-2023-6346.pdf
-BOE-A-2023-19903,construction,VII Convenio colectivo general del sector de la construcción,2023-09-23,https://www.boe.es/boe/dias/2023/09/23/pdfs/BOE-A-2023-19903.pdf
-BOE-A-2023-13740,retail,Convenio colectivo del sector de grandes almacenes (2023-2026),2023-06-09,https://www.boe.es/boe/dias/2023/06/09/pdfs/BOE-A-2023-13740.pdf
-BOE-A-2023-13741,contact-center,III Convenio colectivo de ámbito estatal del sector de contact center,2023-06-09,https://www.boe.es/boe/dias/2023/06/09/pdfs/BOE-A-2023-13741.pdf
+boe_id,sector,doc_type,name,published,valid_until,pdf_url
+BOE-A-2023-6344,hospitality,framework_agreement,VI Acuerdo Laboral para el sector de la Hostelería –ALEH VI–,2023-03-10,,https://www.boe.es/boe/dias/2023/03/10/pdfs/BOE-A-2023-6344.pdf
+BOE-A-2025-7766,consulting-it,agreement,"XIX Convenio colectivo estatal de empresas de consultoría, tecnologías de la información y estudios de mercado y de la opinión pública",2025-04-16,2027-12-31,https://www.boe.es/boe/dias/2025/04/16/pdfs/BOE-A-2025-7766.pdf
+BOE-A-2025-19507,tax-advisory,agreement,VIII Convenio colectivo para despachos de técnicos tributarios y asesores fiscales,2025-10-01,2026-12-31,https://www.boe.es/boe/dias/2025/10/01/pdfs/BOE-A-2025-19507.pdf
+BOE-A-2023-6346,engineering,agreement,"XX Convenio colectivo nacional de empresas de ingeniería; oficinas de estudios técnicos; inspección, supervisión y control técnico y de calidad",2023-03-10,2024-12-31,https://www.boe.es/boe/dias/2023/03/10/pdfs/BOE-A-2023-6346.pdf
+BOE-A-2023-19903,construction,agreement,VII Convenio colectivo general del sector de la construcción,2023-09-23,2026-12-31,https://www.boe.es/boe/dias/2023/09/23/pdfs/BOE-A-2023-19903.pdf
+BOE-A-2023-13740,retail,agreement,Convenio colectivo del sector de grandes almacenes,2023-06-09,2026-12-31,https://www.boe.es/boe/dias/2023/06/09/pdfs/BOE-A-2023-13740.pdf
+BOE-A-2023-13741,contact-center,agreement,III Convenio colectivo de ámbito estatal del sector de contact center,2023-06-09,2026-12-31,https://www.boe.es/boe/dias/2023/06/09/pdfs/BOE-A-2023-13741.pdf

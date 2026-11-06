@@ -1,0 +1,3 @@
+# Normalize line endings: the code also runs on Linux (CI, Docker, HF Spaces).
+* text=auto eol=lf
+*.pdf binary
