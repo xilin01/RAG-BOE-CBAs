@@ -12,6 +12,8 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+      # CPU-only torch: the default Linux wheel ships several GB of CUDA libraries.
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -e ".[dev]"
       - run: ruff check .
       - run: ruff format --check .

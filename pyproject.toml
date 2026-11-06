@@ -5,7 +5,11 @@ description = "Hybrid RAG assistant over Spanish collective bargaining agreement
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "bm25s>=0.2",
+    "numpy>=1.26",
     "pymupdf>=1.24",
+    "PyStemmer>=2.2",
+    "sentence-transformers>=3.0",  # pulls torch; CI and Docker install the CPU build first
 ]
 
 [project.optional-dependencies]
